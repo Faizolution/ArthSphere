@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.nav-link{
+  margin-left:40px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #666;
+    font-size: 16px;
+}
+
+footer a:hover {
+    color: #387ed1;
+}
+
+#supportHero{
+  background-color: rgb(56, 126, 209);
+  color: white;
+}
+
+#supportHero a{
+  color: white;
+}
+
+#supportWrapper{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 150px;
+}
+
+#supportHero input{
+  padding: 20px 50px;
+  width: 100%;
+  font-size: 20px;
+  border-radius: 10px;
+  border: none;
+}
+
+
+
+/* additional */
+:root {
+  --primary: #f8fafc;   /* light background */
+  --accent: #2563eb;    /* vibrant blue */
+  --highlight: #22c55e; /* green for growth */
+}
+
+.navbar {
+  background: var(--primary) !important;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08); /* subtle shadow */
+  padding: 0.75rem 1.5rem;
+}
+
+.navbar-brand {
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--highlight));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navbar-nav .nav-link {
+  color: var(--accent) !important;
+  font-weight: 600;
+  margin: 0 0.5rem;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--highlight) !important;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--accent), var(--highlight)) !important;
+  border: none !important;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+/* ---------- HERO SECTION ---------- */
+
+.hero-image{
+  max-width:100%;
+  height:auto;
+}
+
+.display-4{
+  font-weight:700;
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+  .nav-link{
+    margin-left:0;
+    text-align:center;
+  }
+
+  #supportWrapper{
+    flex-direction:column;
+    margin:0;
+    gap:20px;
+  }
+
+  #supportHero input{
+    width:100%;
+    padding:15px;
+    font-size:16px;
+  }
+
+  .display-4{
+    font-size:2rem;
+  }
+
+  .lead{
+    font-size:1rem;
+  }
+
+  .btn-lg{
+    width:100%;
+  }
+
+  footer{
+    text-align:center;
+  }
+
+}
+
+/* ---------- TABLET ---------- */
+
+@media (min-width:769px) and (max-width:992px){
+
+  .display-4{
+    font-size:2.7rem;
+  }
+
+}
