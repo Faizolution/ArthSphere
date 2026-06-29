@@ -63,12 +63,32 @@ function Hero() {
             and much more.
           </p>
 
-          <Link
+          {/* <Link
             to="/signup"
             className="btn btn-primary btn-lg mt-3 px-5"
           >
             Get Started
-          </Link>
+          </Link> */}
+
+          <div
+  className="d-flex gap-3 justify-content-center flex-wrap mt-4"
+>
+  <a
+    href="/signup"
+    className="btn btn-primary fs-5 px-4"
+  >
+    Sign Up
+  </a>
+
+  <a
+    href="https://arthsphere-dashboard.onrender.com"
+    className="btn btn-outline-primary fs-5 px-4"
+    target="_blank"
+    rel="noreferrer"
+  >
+    Open Dashboard
+  </a>
+</div>
 
         </div>
 

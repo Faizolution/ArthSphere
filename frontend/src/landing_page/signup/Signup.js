@@ -60,7 +60,9 @@ function Signup() {
             alert("Signup Successful!");
 
             // redirect to dashboard
-            window.location.href = "http://localhost:3001";
+            // window.location.href = "http://localhost:3001";
+            window.location.href =
+  "https://arthsphere-dashboard.onrender.com";
 
         } catch (error) {
 
